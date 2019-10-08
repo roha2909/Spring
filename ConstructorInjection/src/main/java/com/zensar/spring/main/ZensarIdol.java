@@ -13,6 +13,8 @@ public class ZensarIdol {
 ApplicationContext ctx = new ClassPathXmlApplicationContext("performers.xml");
 Performer p = ctx.getBean("Pyarre Mohan",Performer.class );
 p.perform();
+Performer p1 = ctx.getBean("jenelia", Performer.class);
+p1.perform();
 	}
 
 }
