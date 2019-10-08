@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd ">
+	<bean id="baja" class="com.zensar.spring.instruments.Baja">
+	</bean>
+	<bean id="ramlal"
+		class="com.zensar.spring.performers.InstruMentalist">
+		<property name="instrument" ref="baja"></property>
+		<property name="song" value="baja re baja re baja band baja iska baja
+		dekho band baja">
+		</property>
+		
+	</bean>
+
+</beans>
