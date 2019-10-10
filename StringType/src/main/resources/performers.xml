@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd ">
+	
+	<bean id="ramlal"
+		class="com.zensar.spring.performers.InstruMentalist">
+		<property name="instrumentSongProps">
+		<props>
+		<prop key="baja">
+		jane dil mein kab se hai tu
+		</prop>
+		<prop key="guitar">
+		jab se mein hu 
+		</prop><prop key="veena">
+		tab se hai tu 
+		</prop>
+		</props>
+			
+
+	
+		
+		</property>
+
+	</bean>
+
+</beans>

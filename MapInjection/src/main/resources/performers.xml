@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd ">
+	<bean id="baja" class="com.zensar.spring.instruments.Baja">
+	</bean>
+	<bean id="guitar" class="com.zensar.spring.instruments.Guitar">
+	</bean>
+	<bean id="veena" class="com.zensar.spring.instruments.Veena">
+	</bean>
+	<bean id="ramlal"
+		class="com.zensar.spring.performers.InstruMentalist">
+		<property name="instrumentSongMap">
+			<map>
+				<entry key-ref="baja" value="song1"></entry>
+				<entry key-ref="guitar" value="song2"></entry>
+				<entry key-ref="veena" value="song3"></entry>
+
+
+
+
+			</map>
+
+	
+		
+		</property>
+
+	</bean>
+
+</beans>
